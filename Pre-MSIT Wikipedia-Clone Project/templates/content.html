@@ -1,0 +1,17 @@
+{% extends "home.html" %}
+
+{% block body %}
+
+<h1> Details of an article </h1>
+
+{% if articles_details %}
+<h2>{{articles_details.title}}</h2>
+<p>{{articles_details.content}}</p>
+
+{% else %}
+<div>
+    <h1>No Data Found </h1>
+</div>
+
+{% endif %}
+{% endblock %}
