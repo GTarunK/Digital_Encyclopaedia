@@ -1,0 +1,22 @@
+{% extends 'home.html' %}
+{% block body %}
+<div class="row">
+    <form action="/save_article_form_data" method="post">
+        <br>
+        
+            <label for = "title">Title:</label><br>
+            <input type="text" id="title" name="title" placeholder="Enter Title"><br>
+        
+        <br>
+        <br>
+        
+            <label for ="content">Content:</label>
+            <br>
+            <textarea id="content" name="content" rows="10" cols="100" placeholder="Enter Content"></textarea><br>
+        
+        <div class="submit_button">
+            <button type="submit" value="submit">submit</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
